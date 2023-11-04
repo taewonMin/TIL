@@ -1,4 +1,4 @@
-package Book.DesignPattern.Pattern_01_Iterator;
+package Book.DesignPattern.SampleCode.Pattern_01_Iterator;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
