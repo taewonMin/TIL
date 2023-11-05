@@ -1,14 +1,14 @@
-package Book.DesignPattern.SampleCode.Pattern_01_Iterator;
+package Book.DesignPattern.Pattern_01_Iterator.TestProblem;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 // ArrayList 용 Iterator(이름만 변경)
-public class BookShelfIterator_1 implements Iterator<Book> {
-    private BookShelf_1 bookShelf;
+public class BookShelfIterator implements Iterator<Book> {
+    private BookShelf bookShelf;
     private int index;
 
-    public BookShelfIterator_1(BookShelf_1 bookShelf) {
+    public BookShelfIterator(BookShelf bookShelf) {
         this.bookShelf = bookShelf;
         this.index = 0;
     }

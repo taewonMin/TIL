@@ -1,14 +1,14 @@
-package Book.DesignPattern.SampleCode.Pattern_01_Iterator;
+package Book.DesignPattern.Pattern_01_Iterator.TestProblem;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 // ArrayList 사용
-public class BookShelf_1 implements Iterable<Book>{
+public class BookShelf implements Iterable<Book>{
     private List<Book> books;
 
-    public BookShelf_1(int initSize) {
+    public BookShelf(int initSize) {
         this.books = new ArrayList<>(initSize);
     }
 
@@ -26,6 +26,6 @@ public class BookShelf_1 implements Iterable<Book>{
 
     @Override
     public Iterator<Book> iterator() {
-        return new BookShelfIterator_1(this);
+        return new BookShelfIterator(this);
     }
 }
